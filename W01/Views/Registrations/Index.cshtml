@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Student>
 
 
 <h1>
@@ -19,25 +19,24 @@
         <th>Department</th>
         <th>About</th>
     </tr>
+    @{
+        foreach (var student in Model)
+        {
+            <tr>
+                <td>@(student.Id)</td>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.Department</td>
+                <td>
+                    <a href="/Registrations/About?id=@(student.Id)">About Me</a> &nbsp;
+                    <a href="/Registrations/Edit?id=@(student.Id)">Edit</a> &nbsp;
+                    <a href="/Registrations/Delete?id=@(student.Id)">Delete</a>
+                </td>
+            </tr>
 
-    <tr>
-        <td>1</td>
-        <td>AliCan</td>
-        <td>Cesur</td>
-        <td>Math Engineering</td>
-        <td>
-            <a href="/Registrations/About?id=1&name=AliCan">About Me</a>
-        </td>
-    </tr>
+        }
+    }
 
-    <tr>
-        <td>2</td>
-        <td>Murtaza</td>
-        <td>Kızıl</td>
-        <td>Math Engineering</td>
-        <td>
-            <a href="/Registrations/About?id=2&name=Murtaza">About Me</a>
-        </td>
-    </tr>
+    
 
 </table>
