@@ -12,10 +12,10 @@ namespace W02.Models
 
             if (Students.Count == 0)
             {
-                for (int i = 0; i <= number; i++)
+                for (int i = 0; i < number; i++)
                 {
                     var student = new Faker<Student>()
-                        .RuleFor(s => s.Id, f => f.IndexFaker + 1)
+                        .RuleFor(s => s.Id, f => i +1)
                         .RuleFor(s => s.Name, f => f.Name.FullName())
                         .RuleFor(s => s.Email, f => f.Internet.Email())
                         .RuleFor(s => s.Age, f => f.Random.Int(18, 38));
