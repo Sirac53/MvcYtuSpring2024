@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W01", "W01\W01.csproj", "{0DFB3A2A-CDA6-4E7E-8C1C-55FFB7835500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W02", "W02\W02.csproj", "{6894EB40-8E96-424D-A7F0-3F6022F800F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W02", "W02\W02.csproj", "{6894EB40-8E96-424D-A7F0-3F6022F800F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObsWebUI", "ObsWebUI\ObsWebUI.csproj", "{19747388-A61A-4A0D-A71A-3FCDA63157BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6894EB40-8E96-424D-A7F0-3F6022F800F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6894EB40-8E96-424D-A7F0-3F6022F800F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6894EB40-8E96-424D-A7F0-3F6022F800F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19747388-A61A-4A0D-A71A-3FCDA63157BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19747388-A61A-4A0D-A71A-3FCDA63157BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19747388-A61A-4A0D-A71A-3FCDA63157BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19747388-A61A-4A0D-A71A-3FCDA63157BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
